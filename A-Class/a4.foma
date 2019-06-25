@@ -1,0 +1,38 @@
+### Sinhala.foma ###
+
+# Vowels
+define A [ක | ​ඛ | ග | ​ඝ | ච | ​ඡ | ජ | ට | ඨ | ඩ | ඪ | ණ | ත | ද | ධ | න | ප | ඵ | බ | භ | ම | ය | ර | ල | ව | ශ | ෂ | ස | හ | ළ | ​ෆ | ඟ | ඬ | ඳ | ඹ];
+
+define B [ව ෙ ය ි | ූ |ව ේ | ු ව ෙ ම ි | ෙ හ ි | ෙ හ ු | ු ණ ු];
+
+
+read lexc a4.lexc
+define Lexicon;
+
+######### Rewrite rules
+
+define AgayaClass          අ -> ඇ || .#. _ ?*  "^" B ;
+define UyaClass            උ -> ඉ || .#. _ ?*  "^" B ;
+define OthaClass           ඔ -> එ || .#. _ ?*  "^" B ;
+define KotaClass         ො -> ෙ || .#. A _ ?*  "^" B ;
+define SoodaClass        ෝ -> ේ || .#. A _ ?*  "^" B ;
+define PaadaClass          ා -> ෑ || .#. A _ ?*  "^" B ;
+define DuwaClass           ු -> ි || .#. A _ ?*  "^" B ;
+
+
+# To Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+define ClassOneGrammar 	Lexicon            .o.
+                        AgayaClass         .o.
+                        UyaClass           .o.
+                        OthaClass          .o.
+                        KotaClass          .o.
+                        SoodaClass         .o.
+                        PaadaClass         .o.
+                        DuwaClass          .o.
+               	        Cleanup;
+
+regex ClassOneGrammar;
+
+
