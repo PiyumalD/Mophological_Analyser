@@ -1,0 +1,26 @@
+### Sinhala16.foma ###
+
+# Vowels
+define A [ ​ද ෙ ];
+
+define C [ ​ප න ් | ප ල ් ල ා | ල ා ];
+define B [ න ් න ු |​ න ් | න ් න ෙ ම ි | න ් න ෙ ​ම ු | න ් න ෙ ​හ ි | න ් න ෙ ​හ ු |න ් න ා ​ය | න ් න ේ ​ය | න ් න ෝ ​ය]; 
+
+
+read lexc SinhalaCP.lexc
+define Lexicon;
+
+######### Rewrite rules
+
+define PClass1        [ෙ]  ->  ු || A _   "^" B ;
+define PClass2        [ෙ]  ->  දී || A _   "^" C ;
+
+
+# To Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+define ClassFifGrammar 	Lexicon            .o.
+                        PClass          .o.
+               	        Cleanup;
+
+regex ClassFifGrammar;
