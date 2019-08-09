@@ -1,0 +1,32 @@
+### sinhalaC1.foma ###
+
+read lexc D1.lexc
+define Lexicon;
+
+
+define A [ක | ​ඛ | ග | ​ඝ | ච | ​ඡ | ජ | ට | ඨ | ඩ | ඪ | ණ | ත | ද | ධ | න | ප | ඵ | බ | භ | ම | ය | ර | ල | ව | ශ | ෂ | ස | හ | ළ | ​ෆ | ඟ | ඬ | ඳ | ඹ];
+
+define B [ප න ් | ප ල ් ල ා | ව |  ව ත  ි | ව න ් න ී ය | ව න ් න ෙ ම ි | ව න ් න ෙ ම ු | ව න ් න ෙ හ ි | ව න ් න ේ ය | ව න ් න ෝ ය | ව න ් න ට | ව ම ි න ්];    #######අමද 
+
+define C [ප න ් | ප ල ් ල ා | ු ණ ු | ූ | ු ව ෙ ම ි | ු ව ෙ ම ු| ු ව ෙ හ ි|  ු ව ෙ හ ු | ු ව ේ ය| ු ව ා ය | ු ව ෝ ය | ෙ හ ි | ෙ හ ු|ව ෙ ය ි |ව ෙ ත ි |ව ේ];   #####ඇමද 
+
+
+
+######### Rewrite rules
+
+define CDRule1  ි -> 0 || _ "^" [B | C ] ;
+define CDRule2  අ -> ඇ ||  .#. _ ?* "^" C ;
+define CDRule3  [..] -> ැ || A _ A "^" C ;
+
+# To Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+define D1Grammar 	Lexicon .o.
+		CDRule1		.o.
+		CDRule3		.o.
+              	CDRule2		.o.
+		Cleanup;
+
+regex D1Grammar;
+
+
