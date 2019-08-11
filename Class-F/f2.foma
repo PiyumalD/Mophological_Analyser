@@ -1,0 +1,34 @@
+### Sinhala.foma ###
+
+# Vowels
+define A [ක | ​ඛ | ග | ​ඝ | ච | ​ඡ | ජ | ට | ඨ | ඩ | ඪ | ණ | ත | ද | ධ | න | ප | ඵ | බ | භ | ම | ය | ර | ල | ව | ශ | ෂ | ස | හ | ළ | ​ෆ | ඟ | ඬ | ඳ | ඹ];
+
+define B [ ු ණ ු | ු න ෙ ම ි | ු න ෙ ම ු | ු න ෙ හ ි | ු න ෙ හ ු | ු න ේ ය | ු න ා ය | ු න ෝ ය | ී | ි ය න ් | ි ය ල ් ල ා];
+
+define C [ව | ව ත ි | ව න ් න ී ය | ව න ් න ෙ ම ි | ව න ් න ෙ ම ු | ව න ් න ෙ හ ි | ව න ් න ෙ හ ු | ව න ් න ේ ය | ව න ් න ෝ ය | ව ම ි | ව ම ු | ව ය ි | ව හ ි | ව හ ු | ව න ් න ට | ව ම ි න ්];
+
+define D [ේ | ෙ ම ි | ෙ ම ු | ෙ හ ි | ෙ හ ු | ෙ ය ි | ෙ ත ි];
+
+
+read lexc f2.lexc
+define Lexicon;
+
+######### Rewrite rules
+
+###
+define WadiAClass          ි -> 0 || A _ "^" [B | C | D] ;
+define WadiBClass          [..] -> ැ || .#. A _ A "^" [B | D] ;
+define WadiCClass          [..] -> ද ් || .#. A _ ද "^" C ;
+
+# To Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+define ClassE1Grammar 	Lexicon                .o.
+                        WadiAClass             .o.
+                        WadiBClass             .o.
+                        WadiCClass             .o.
+               	        Cleanup;
+
+regex ClassE1Grammar;
+
+
