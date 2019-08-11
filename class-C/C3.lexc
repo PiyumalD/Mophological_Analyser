@@ -8,21 +8,12 @@ Verb ;
 
 LEXICON Verb
 
-අස්වදි	CbVinf;
-පදි	CbVinf;
-පිරිමදි	CbVinf;
-පිළිපදි	CbVinf;
-බදි	CbVinf;
-මදි	CbVinf;
-අදි	CbVinf;
-අයැදි	CbVinf;
-ඇවිදි	CbVinf;
+පලඳි 	CcVinf;
 
 
-LEXICON CbVinf
 
+LEXICON CcVinf
 % +verb:^ #;
-% +verb% +fin% +sim% +imp% +non% +2sg:^ #;
 % +verb% +fin% +sim% +non% +3pl:^ති #;
 % +verb% +fin% +sim% +bless% +non% +3sg:^ත්වා #;
 % +verb% +fin% +sim% +imp% +non% +2sg:^නවා #;
@@ -46,53 +37,42 @@ LEXICON CbVinf
 % +verb% +fin% +sim% +bless% +non% +1pl:^මුවා #;
 % +verb% +fin% +sim% +non% +3sg:^යි #;
 % +verb% +fin% +sim% +imp% +non% +2sg:^ව #;
-% +verb% +fin% +sim% +caus% +non% +3pl:^්දවති #;
-% +verb% +fin% +sim% +caus% +non% +3sgf:^්දවන්නීය #;
-% +verb% +fin% +sim% +caus% +non% +1sg:^්දවන්නෙමි #;
-% +verb% +fin% +sim% +caus% +non% +1pl:^්දවන්නෙමු #;
-% +verb% +fin% +sim% +caus% +non% +2sg:^්දවන්නෙහි #;
-% +verb% +fin% +sim% +caus% +non% +2pl :^්දවන්නෙහු #;
-% +verb% +fin% +sim% +caus% +non% +3sg:^්දවන්නේය #;
-% +verb% +fin% +sim% +caus% +non% +3pl:^්දවන්නෝය #;
-% +verb% +fin% +sim% +caus% +non% +1sg:^්දවමි #;
-% +verb% +fin% +sim% +caus% +non% +1pl:^්දවමු #;
-% +verb% +fin% +sim% +caus% +non% +3sg:^්දවයි #;
-% +verb% +fin% +sim% +caus% +non% +2sg:^්දවහි #;
-% +verb% +fin% +sim% +caus% +non% +2pl:^්දවහු #;
+% +verb% +fin% +sim% +caus% +non% +3pl:^වති #;
+% +verb% +fin% +sim% +caus% +non% +3sgf:^වන්නීය #;
+% +verb% +fin% +sim% +caus% +non% +1sg:^වන්නෙමි #;
+% +verb% +fin% +sim% +caus% +non% +1pl:^වන්නෙමු #;
+% +verb% +fin% +sim% +caus% +non% +2sg:^වන්නෙහි #;
+% +verb% +fin% +sim% +caus% +non% +3sg:^වන්නේය #;
+% +verb% +fin% +sim% +caus% +non% +3pl:^වන්නෝය #;
+% +verb% +fin% +sim% +caus% +non% +1sg:^වමි #;
+% +verb% +fin% +sim% +caus% +non% +1pl:^වමු #;
+% +verb% +fin% +sim% +caus% +non% +3sg:^වයි #;
+% +verb% +fin% +sim% +caus% +non% +2sg:^වහි #;
+% +verb% +fin% +sim% +caus% +non% +2pl:^වහු #;
+% +verb% +nonf% +sim% +non:^න්නට #;
+% +verb% +nonf% +sim% +non:^වමින් #;
 % +verb% +fin% +sim% +imp% +non% +2pl:^වු #;
 % +verb% +fin% +sim% +non% +2sg:^හි #;
 % +verb% +fin% +sim% +bless% +non% +2sg:^හිවා #;
 % +verb% +fin% +sim% +imp% +non% +2pl:^හු #;
 % +verb% +fin% +sim% +caus% +non% +2pl:^හුවා #;
-% +verb% +fin% +sim% +bless% +non% +3sg:^ීවා #;
 % +verb% +nonf% +sim% +non% +mixV:^මින් #;
-% +verb% +nonf% +sim% +non% +preV:^ී #;
+% +verb% +nonf% +sim% +non% +preV:^ #;
 % +verb% +nonf% +sim% +non:^න්නට #;
-% +verb% +nonf% +sim% +non:^වන්නට #;
 % +verb% +nonf% +sim% +past:^නලද #;
 % +verb% +nonf% +sim% +past:^නුලැබූ #;
-% +verb% +nonf% +sim% +non:^වමින් #;
 % +verb% +nonf% +sim% +non:^ද්දී #;
 % +verb% +fin% +sim% +past:^නලදී #;
 % +verb% +nonf% +sim% +past:^ුණු #;
-% +verb% +nonf% +sim% +past:^්ද #;
 % +verb% +fin% +sim% +past% +1sg:^්දෙමි #;
 % +verb% +fin% +sim% +past% +1pl:^්දෙමු #;
 % +verb% +fin% +sim% +past% +2sg:^්දෙහි #;
 % +verb% +fin% +sim% +past% +2pl:^්දෙහු #;
-% +verb% +fin% +sim% +past% +3sg:^්දාය #;
 % +verb% +fin% +sim% +past% +3sg:^්දේය #;
+% +verb% +fin% +sim% +past% +3sgf:^්දාය #;
 % +verb% +fin% +sim% +past% +3pl:^්දෝය #;
-% +verb% +fin% +sim% +passive% +non% +3sg:^ේ #;
-% +verb% +fin% +sim% +passive% +non% +1sg:^ෙමි #;
-% +verb% +fin% +sim% +passive% +non% +1pl:^ෙමු #;
 % +verb% +fin% +sim% +passive% +non% +2pl:^ෙහි #;
 % +verb% +fin% +sim% +passive% +non% +2pl:^ෙහු #;
-% +verb% +fin% +sim% +passive% +non% +3sg:^ෙයි #;
-% +verb% +fin% +sim% +passive% +non% +3pl:^ෙති #;
 % +verb% +fin% +sim% +passive% +non% +3sg:^වෙයි #;
 % +verb% +fin% +sim% +passive% +non% +3pl:^වෙති #;
 % +verb% +fin% +sim% +passive% +non% +3sg:^වේ #;
-
-
-
