@@ -13,14 +13,15 @@ define Lexicon;
 ######### Rewrite rules
 
 define PClass1        [ෙ]  ->  ු || A _   "^" B ;
-define PClass2        [ෙ]  ->  දී || A _   "^" C ;
+define PClass2        [ෙ]  ->   ී || A _   "^" C ;
 
 
 # To Cleanup: remove morpheme boundaries
 define Cleanup "^" -> 0;
 
 define ClassFifGrammar 	Lexicon            .o.
-                        PClass          .o.
+                        PClass1          .o.
+                        PClass2          .o.
                	        Cleanup;
 
 regex ClassFifGrammar;
