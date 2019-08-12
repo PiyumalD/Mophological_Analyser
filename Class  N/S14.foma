@@ -1,0 +1,29 @@
+### Sinhala14.foma ###
+
+# Vowels
+define A [ ​බ  ො];
+
+define C [ ​ී];
+define B [ ව ු |ව ් ව ෙ ම ි | ව ු ව ෙ ම ු |​ ව ් ව ෙ ​හ ි |​ ව ් ව ෙ ​හ ු |​ ව ් ව ා ය | ​ව ් ව ේ ය |​ව ් ව ෝ ය]; 
+define D [ ​ප න ් | ප ල ් ල ා ];
+
+read lexc SinhalaCN.lexc
+define Lexicon;
+
+######### Rewrite rules
+
+define PClass1        [​ ො]  ->  ි || A _   "^" B ;
+define PClass2        [ ො]  ->  0 || A _   "^" C ;
+define PClass3        [ ො]  ->  ී || A _   "^" D ;
+
+
+# To Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+define ClassFifGrammar 	Lexicon            .o.
+                        PClass1          .o.
+                        PClass2          .o.
+                        PClass3          .o.
+               	        Cleanup;
+
+regex ClassFifGrammar;
