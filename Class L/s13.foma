@@ -1,0 +1,23 @@
+### Sinhala.foma ###
+
+# Vowels
+define A [ ය ];
+
+define B [හ ින ් | ය ෙම ි |ය ෙම ු |ය ෙහ ි | ය ෙහ ු | ය ාය |ය ේය|ය ෝය ];
+
+
+read lexc SinhalaCL.lexc
+define Lexicon;
+
+######### Rewrite rules
+
+define BalaClass        [ය]  -> ග ි || .#. _   "^" B ;
+
+# To Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+define ClassOneGrammar 	Lexicon            .o.
+                        BalaClass          .o.
+               	        Cleanup;
+
+regex ClassOneGrammar;
