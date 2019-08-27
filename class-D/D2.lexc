@@ -1,73 +1,21 @@
-!!!ClassOne.lexc!!!
+!!!sinhalaC1.lexc!!!
 
 Multichar_Symbols +N % +verb% %|% +part  +past% %=த்% %|% Part +PresPart +3P +2P +1P +past% %=த்% %|%  +Pres +Fut +Sg +Pl +Masc +Fem +Rat +Irr +Euph +Sandhi +Neg +Comp +Imp +Inf +RelPart +Con +Causal +Temp +Neu +PartNoun % +verb% %|% erbNoun +gerundPres +presParticiple
 
 LEXICON Root
 
-ClassOne ;
+Verb ;
 
-LEXICON ClassOne
+LEXICON Verb
 
 
-අගය 	C1Vinf;
-අඟව 	C1Vinf;
-අටව 	C1Vinf;
-අදහ 	C1Vinf;
-අමත 	C1Vinf;
-අඹර 	C1Vinf;
-අරඹ 	C1Vinf;
-අලව 	C1Vinf;
-
-අස 	C1Vinf;
-අඹ 	C1Vinf;
-අන 	C1Vinf;
-
-අල්ල 	C1Vinf;
-
-උය 	C1Vinf;
-උල 	C1Vinf;
-
-උපය 	C1Vinf;
-
-උස්ස   C1Vinf;
-
-ඔත 	C1Vinf;
-ඔබ 	C1Vinf;
-ඔය 	C1Vinf;
-
-ඔසව 	C1Vinf;
-
-කොට 	C1Vinf;
-ගොත 	C1Vinf;
-දොඩ 	C1Vinf;
-පොව 	C1Vinf;
-පොළ 	C1Vinf;
-යොද 	C1Vinf;
-සොය 	C1Vinf;
-
-හොබව 	C1Vinf;
-
-සෝද 	C1Vinf;
-තෝර 	C1Vinf;
-
-පාද 	C1Vinf;
-පාර 	C1Vinf;
-
-දුව	C1Vinf;
-පුද 	C1Vinf;
-
-පුරව 	C1Vinf;
+බුදි	CdVinf;
+කුමුදි	CdVinf;
 
 
 
-
-
-
-
-LEXICON C1Vinf
-
+LEXICON CdVinf
 % +verb:^ #;
-% +verb% +fin% +sim% +imp% +non% +2sg:^ #;
 % +verb% +fin% +sim% +non% +3pl:^ති #;
 % +verb% +fin% +sim% +bless% +non% +3sg:^ත්වා #;
 % +verb% +fin% +sim% +imp% +non% +2sg:^නවා #;
@@ -103,26 +51,36 @@ LEXICON C1Vinf
 % +verb% +fin% +sim% +caus% +non% +3sg:^වයි #;
 % +verb% +fin% +sim% +caus% +non% +2sg:^වහි #;
 % +verb% +fin% +sim% +caus% +non% +2pl:^වහු #;
+% +verb% +fin% +sim% +non:^වයි #;
+% +verb% +nonf% +sim% +non:^වන්නට #;
+% +verb% +nonf% +sim% +non:^වමින් #;
 % +verb% +fin% +sim% +imp% +non% +2pl:^වු #;
 % +verb% +fin% +sim% +non% +2sg:^හි #;
 % +verb% +fin% +sim% +bless% +non% +2sg:^හිවා #;
 % +verb% +fin% +sim% +imp% +non% +2pl:^හු #;
 % +verb% +fin% +sim% +caus% +non% +2pl:^හුවා #;
-% +verb% +fin% +sim% +bless% +non% +3sg:^ාවා #;
 % +verb% +nonf% +sim% +non% +mixV:^මින් #;
-% +verb% +nonf% +sim% +non% +preV:^ා #;
+% +verb% +nonf% +sim% +non% +preV:^ #;
 % +verb% +nonf% +sim% +non:^න්නට #;
-% +verb% +nonf% +sim% +non:^වන්නට #;
 % +verb% +nonf% +sim% +past:^නලද #;
 % +verb% +nonf% +sim% +past:^නුලැබූ #;
-% +verb% +nonf% +sim% +non:^වමින් #;
 % +verb% +nonf% +sim% +non:^ද්දී #;
 % +verb% +fin% +sim% +past:^නලදී #;
-% +verb% +fin% +sim% +non:^වයි #;
 % +verb% +nonf% +sim% +past:^ුණු #;
-% +verb% +fin% +sim% +non:^වෙයි #;
-% +verb% +fin% +sim% +non:^වේ #;
 % +verb% +nonf% +sim% +past:^ූ #;
 % +verb% +fin% +sim% +past% +1sg:^ුවෙමි #;
-% +verb% +fin% +sim% +non% +2plh:^ෙහි #;
-% +verb% +fin% +sim% +non% +2plh:^ෙහු #;
+% +verb% +fin% +sim% +past% +1pl:^ුවෙමු #;
+% +verb% +fin% +sim% +past% +2sg:^ුවෙහි #;
+% +verb% +fin% +sim% +past% +2pl:^ුවෙහු #;
+% +verb% +fin% +sim% +past% +3sg:^ුවේය #;
+% +verb% +fin% +sim% +past% +3sg:^ුවාය #;
+% +verb% +fin% +sim% +past% +3pl:^ුවෝය #;
+% +verb% +fin% +sim% +passive% +non% +2plh:^ෙහි #;
+% +verb% +fin% +sim% +passive% +non% +2plh:^ෙහු #;
+% +verb% +fin% +sim% +passive% +non% +3sg:^වෙයි #;
+% +verb% +fin% +sim% +passive% +non% +3pl:^වෙති #;
+% +verb% +fin% +sim% +passive% +non% +3sg:^වේ #;
+
+
+
+
