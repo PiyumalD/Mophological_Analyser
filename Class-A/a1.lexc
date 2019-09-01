@@ -10,7 +10,6 @@ LEXICON ClassOne
 
 කඩ 	C1Vinf;
 කප 	C1Vinf;
-කර 	C1Vinf;
 කව 	C1Vinf;
 කස 	C1Vinf;
 ගය 	C1Vinf;
@@ -51,6 +50,7 @@ LEXICON ClassOne
 වගබල 	C1Vinf;
 අභිබව 	C1Vinf;
 අස්වස 	C1Vinf;
+පිරිමස 	C1Vinf;
 කරකව 	C1Vinf;
 පටලව 	C1Vinf;
 	
@@ -118,7 +118,7 @@ LEXICON C1Vinf
 % +verb% +fin% +sim% +past% +1pl:^ුවෙමු #;
 % +verb% +fin% +sim% +past% +2sg:^ුවෙහි #;
 % +verb% +fin% +sim% +past% +2pl:^ුවෙහු #;
-% +verb% +fin% +sim% +past% +3sg:^ුවාය #;
+% +verb% +fin% +sim% +past% +3sgf:^ුවාය #;
 % +verb% +fin% +sim% +past% +3sg:^ුවේය #;
 % +verb% +fin% +sim% +past% +3pl:^ුවෝය #;
 % +verb% +fin% +sim% +passive% +non% +3sg:^ේ #;
@@ -131,3 +131,12 @@ LEXICON C1Vinf
 % +verb% +fin% +sim% +passive% +non% +3sg:^වෙයි #;
 % +verb% +fin% +sim% +passive% +non% +3pl:^වෙති #;
 % +verb% +fin% +sim% +passive% +non% +3sg:^වේ #;
+% +verb% +nonf% +sim% +non:^ිය #;
+% +verb% +nonf% +sim% +non:^ුවොත් #;
+% +verb% +nonf% +sim% +past:^ුවේ #;
+% +verb% +nonf% +sim% +non:^න්නේ #;
+% +verb% +nonf% +sim% +non:^න #;
+% +verb% +nonf% +sim% +non:^නට #;
+% +verb% +nonf% +sim% +non% +preV:^බලවා #;
+% +verb% +nonf% +sim% +caus% +non:^වන්නේ #;
+% +verb% +nonf% +sim% +non:^නුයේ #;

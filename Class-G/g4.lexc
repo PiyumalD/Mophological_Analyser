@@ -9,10 +9,13 @@ ClassG4 ;
 LEXICON ClassG4
 
 පෙනෙ	C1Vinf;
+තිබෙ	C1Vinf;
 
 ගිලෙ 	C1Vinf;
 
+
 LEXICON C1Vinf
+
 
 % +verb:^ #;
 % +verb% +fin% +sim% +non% +3pl:^ති #;
@@ -73,3 +76,12 @@ LEXICON C1Vinf
 % +verb% +fin% +sim% +past% +3sg:^ුනේය #;
 % +verb% +fin% +sim% +past% +3sgf:^ුනාය #;
 % +verb% +fin% +sim% +past% +3pl:^ුනෝය #;
+% +verb% +nonf% +sim% +non:^ිය #;
+% +verb% +nonf% +sim% +non:^ුනොත් #;
+% +verb% +nonf% +sim% +past:^ුනේ #;
+% +verb% +nonf% +sim% +non:^න්නේ #;
+% +verb% +nonf% +sim% +non:^න #;
+% +verb% +nonf% +sim% +non:^නට #;
+% +verb% +nonf% +sim% +non% +preV:^්වා #;
+% +verb% +nonf% +sim% +caus% +non:^්වන්නේ #;
+% +verb% +nonf% +sim% +non:^නුයේ #;

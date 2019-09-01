@@ -8,14 +8,15 @@ ClassG1 ;
 
 LEXICON ClassG1
 
-දික්ගැස්සෙ	C1Vinf;
-
-හැසිරෙ	C1Vinf;
-පැතිරෙ	C1Vinf;
-
-වැහැරෙ	C1Vinf;
-
-හැප්පෙ	C1Vinf;
+දැනෙ	C1Vinf;
+හැපෙ	C1Vinf;
+ලැබෙ	C1Vinf;
+බැලෙ	C1Vinf;
+ගැටෙ	C1Vinf;
+වැටෙ	C1Vinf;
+වැදෙ	C1Vinf;
+හැරෙ	C1Vinf;
+මැරෙ	C1Vinf;
 
 සැරසෙ	C1Vinf;
 පැවරෙ	C1Vinf;
@@ -25,24 +26,28 @@ LEXICON ClassG1
 වැජඹෙ	C1Vinf;
 වැලපෙ	C1Vinf;
 
-දැනෙ	C1Vinf;
-ලැබෙ	C1Vinf;
-ගැටෙ	C1Vinf;
-වැටෙ	C1Vinf;
-වැදෙ	C1Vinf;
-හැරෙ	C1Vinf;
-මැරෙ	C1Vinf;
+හැප්පෙ	C1Vinf;
+
+දික්ගැස්සෙ	C1Vinf;
+
+හැසිරෙ	C1Vinf;
+පැතිරෙ	C1Vinf;
+හැඳිනෙ	C1Vinf;
+පැමිණෙ	C1Vinf;
+
+වැහැරෙ	C1Vinf;
+
+තේරෙ	C1Vinf;
 
 යෙදෙ	C1Vinf;
 
-තේරෙ	C1Vinf;
+පෙළඹෙ	C1Vinf;
+හෙල්ලෙ	C1Vinf;
 
 පෑදෙ	C1Vinf;
 
 ඉපදෙ	C1Vinf;
 
-පෙළඹෙ	C1Vinf;
-හෙල්ලෙ	C1Vinf;
 
 
 LEXICON C1Vinf
@@ -110,3 +115,12 @@ LEXICON C1Vinf
 % +verb% +fin% +sim% +passive% +non% +3sg:^වෙයි #;
 % +verb% +fin% +sim% +passive% +non% +3pl:^වෙති #;
 % +verb% +fin% +sim% +passive% +non% +3sg:^වේ #;
+% +verb% +nonf% +sim% +non:^ිය #;
+% +verb% +nonf% +sim% +non:^ුනොත් #;
+% +verb% +nonf% +sim% +past:^ුනේ #;
+% +verb% +nonf% +sim% +non:^න්නේ #;
+% +verb% +nonf% +sim% +non:^න #;
+% +verb% +nonf% +sim% +non:^නට #;
+% +verb% +nonf% +sim% +non% +preV:^වා #;
+% +verb% +nonf% +sim% +caus% +non:^වන්නේ #;
+% +verb% +nonf% +sim% +non:^නුයේ #;

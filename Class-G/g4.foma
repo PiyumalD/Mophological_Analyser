@@ -3,7 +3,7 @@
 # Vowels
 define A [ක | ​ඛ | ග | ​ඝ | ච | ​ඡ | ජ | ට | ඨ | ඩ | ඪ | ණ | ත | ද | ධ | න | ප | ඵ | බ | භ | ම | ය | ර | ල | ව | ශ | ෂ | ස | හ | ළ | ​ෆ | ඟ | ඬ | ඳ | ඹ];
 
-define B [ ු ණ ු | ු න ෙ ම ි | ු න ෙ ම ු | ු න ෙ හ ි | ු න ෙ හ ු | ු න ේ ය | ු න ා ය | ු න ෝ ය | ී | ි ය න ් | ි ය ල ් ල ා];
+define B [ ු ණ ු | ු න ෙ ම ි | ු න ෙ ම ු | ු න ෙ හ ි | ු න ෙ හ ු | ු න ේ ය | ු න ා ය | ු න ෝ ය | ී | ි ය න ් | ි ය ල ් ල ා | ි ය | ු න ො ත ් | ු න ේ | ් ව ා | ් ව න ් න ේ];
 
 define C [ව | ව ත ි | ව න ් න ී ය | ව න ් න ෙ ම ි | ව න ් න ෙ ම ු | ව න ් න ෙ හ ි | ව න ් න ෙ හ ු | ව න ් න ේ ය | ව න ් න ෝ ය | ව ම ි | ව ම ු | ව ය ි | ව හ ි | ව හ ු | ව න ් න ට | ව ම ි න ්];
 
@@ -21,15 +21,20 @@ define PeneBClass         [..] -> න ් || .#. ?* _ න "^" [C] ;
 define GileAClass          ෙ -> 0 || ල _ "^" [B | C] ;
 define GileBClass         [..] -> ල ් || .#. ?* _ ල "^" [C] ;
 
+define ThibeAClass          ෙ -> 0 || බ _ "^" [B | C] ;
+define ThibeBClass         [..] -> බ ් || .#. ?* _ බ "^" [C] ;
+
 
 # To Cleanup: remove morpheme boundaries
 define Cleanup "^" -> 0;
 
-define ClassE1Grammar 	Lexicon               .o.
+define ClassE1Grammar 	Lexicon                .o.
                         PeneAClass             .o.
                         PeneBClass             .o.
                         GileAClass             .o.
                         GileBClass             .o.
+                        ThibeAClass             .o.
+                        ThibeBClass             .o.
                	        Cleanup;
 
 regex ClassE1Grammar;
